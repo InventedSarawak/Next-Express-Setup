@@ -6,7 +6,7 @@
     "scripts": {
         "dev": "concurrently \"cd backend && pnpm dev\" \"cd frontend && pnpm dev\"",
         "build": "cd frontend && pnpm build",
-        "start": "concurrently \"cd backend && pnpm start\" \"cd frontend && pnpm preview\"",
+        "start": "concurrently \"cd backend && pnpm start\" \"cd frontend && pnpm start\"",
         "format": "prettier --write .",
         "lint": "concurrently \"cd backend && pnpm lint\" \"cd frontend && pnpm lint\"",
         "lint:fix": "concurrently \"cd backend && pnpm lint:fix\" \"cd frontend && pnpm lint:fix\"",
