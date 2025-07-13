@@ -1,6 +1,6 @@
-# MERN Template 🚀
+# Next.js-Express Template 🚀
 
-A modern MERN (MongoDB, Express, React, Node.js) monorepo template with full TypeScript support, TailwindCSS for styling, and scalable folder structures for both frontend and backend projects. Built for performance, developer experience, and production-readiness.
+A modern Next.js-Express monorepo template with full TypeScript support, TailwindCSS for styling, and scalable folder structures for both frontend and backend projects. Built for performance, developer experience, and production-readiness.
 
 ## 📌 Features
 
@@ -12,13 +12,14 @@ A modern MERN (MongoDB, Express, React, Node.js) monorepo template with full Typ
 - API documentation with Swagger
 - Database integration ready
 - Linting with ESLint and Prettier
-- Testing with Cypress
+- Testing with Vitest
 - Easy CI/CD Integration Possibility
 
-### 🌐 Frontend (React + Vite + TailwindCSS + Shad/cn)
+### 🌐 Frontend (Next.js + TailwindCSS + Shad/cn)
 
-- Fast bundling with Vite
+- Server-side rendering with Next.js
 - Modern React with TypeScript
+- App Router and file-based routing
 - UI styling via TailwindCSS
 - Component-based architecture
 - Utility functions and shared libraries
@@ -96,14 +97,13 @@ pnpm lint
 │   │   ├── services/
 │   │   ├── tests/
 │   │   └── utils/
-├── frontend/             # React frontend
+├── frontend/             # Next.js frontend
 │   ├── src/
-│   │   ├── App.tsx
-│   │   ├── main.tsx
-│   │   ├── assets/
-│   │   ├── components/
-│   │   ├── lib/
-│   │   └── index.css
+│   │   ├── app/
+│   │   │   ├── layout.tsx
+│   │   │   ├── page.tsx
+│   │   │   └── globals.css
+│   │   └── lib/
 ├── package.json          # Root config
 ├── pnpm-lock.yaml        # Lock file
 └── README.md             # You’re here!
